@@ -66,21 +66,6 @@ img {
   padding: 12px 12px;
 }
 
-.topnav a span::after {
-  position: absolute;
-  content: "";
-  width: 20%;
-  height: 1px;
-  background: #fff;
-  left: 50%;
-  bottom: 25%;
-  transform: translateX(-50%);
-  transition: width 0.3s ease-in-out;
-}
-
-.topnav a span:hover::after {
-  width: 90%;
-}
 
 .topnav a:hover:not(.header-logo) {
   background-color: #ff0000b8;
@@ -93,24 +78,20 @@ img {
   border-radius: 15px;
 }
 
-.topnav a.active span::after {
-  width: 90%;
-}
-
 
 .topnav a.active:hover {
   background-color: #ff0000;
-}
-
-.topnav a.active:hover::after {
-  width: 90%;
 }
 
 .topnav .icon {
   display: none;
 }
 
-@media screen and (max-width: 824px) {
+.br-responsive {
+  display: none;
+}
+
+@media screen and (max-width: 1170px) {
   .topnav a {
     display: none;
   }
@@ -119,16 +100,20 @@ img {
     float: right;
     display: block;
   }
-}
 
-@media screen and (max-width: 824px) {
+  .topnav a:hover:not(.header-logo) {
+    background-color: transparent;
+    color: #000;
+  }
+
   .topnav.responsive {
     position: relative;
   }
 
   .topnav.responsive .main-navbar {
     float: none;
-    height: 100vh;
+    height: calc(100vh - 16rem);
+    margin-top: 2rem;
   }
 
   main.responsive {
@@ -162,6 +147,11 @@ img {
     display: block;
 
   }
+
+  .br-responsive {
+    display: block;
+  }
+
 }
 
 main {
@@ -177,6 +167,7 @@ main {
 
 
 }
+
 
 .modal-btn {
   font-size: 145%;
