@@ -42,8 +42,8 @@ const errorMessages = {
 
 const regex = {
   // name: /^[A-Z][A-ÿ]+([-\s][A-Z][A-ÿ]+)*$/,
-  name: /^([A-ÿ]{3,18}([-\s][A-ÿ]{2,18})*)$/,
-  email: /^[a-zA-Z0-9]+([._-][a-zA-Z0-9]+)*@[a-zA-Z]\.[a-zA-Z]$/,
+  name: /^([A-ÿ]{2,18}([-\s][A-ÿ]{2,18})*)$/,
+  email: /^[a-zA-Z0-9]+([._-][a-zA-Z0-9]+)*@[a-zA-Z]+(\.[a-zA-Z]+)*$/,
 };
 
 // Validate the form
