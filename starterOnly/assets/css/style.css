@@ -1,3 +1,14 @@
+@font-face {
+  font-family: "DM Sans", ;
+  src: url("../fonts/DM_Sans/DMSans-Bold.ttf"),
+    url("../fonts/DM_Sans/DMSans-BoldItalic.ttf"),
+    url("../fonts/DM_Sans/DMSans-Italic.ttf"),
+    url("../fonts/DM_Sans/DMSans-Medium.ttf"),
+    url("../fonts/DM_Sans/DMSans-MediumItalic.ttf"),
+    url("../fonts/DM_Sans/DMSans-Regular.ttf"),
+
+}
+
 :root {
   --font-default: "DM Sans", Arial, Helvetica, sans-serif;
   --font-slab: var(--font-default);
@@ -240,8 +251,22 @@ main {
 }
 
 .modal-body {
+  height: 90vh;
+  overflow-y: scroll;
   padding: 15px 8%;
   margin: 15px auto;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.modal-body:-webkit-scrollbar {
+  width: 8px;
 }
 
 label {
@@ -573,10 +598,46 @@ input[data-error]::after {
   display: none;
 }
 
+
+
+.form-validate {
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.form-validate h2 {
+  text-align: center;
+  width: 60%;
+  font-weight: 100;
+}
+
 footer {
   padding-left: 2vw;
   padding-right: 2vw;
   margin: 0 20px;
+}
+
+
+/* Js class styles */
+.hidden {
+  display: none;
+}
+
+.display {
+  display: flex;
+}
+
+.error-form {
+  color: #FF4E60;
+  font-size: 10px;
+  padding: 0.5vw 0.5vw 0.5vw 0;
+  display: none;
+}
+
+.error-form.active {
+  display: block;
 }
 
 @media screen and (max-width: 1024px) {
