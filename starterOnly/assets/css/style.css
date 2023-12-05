@@ -132,6 +132,15 @@ img {
   }
 
 
+  .fa-xmark.responsive {
+    display: none;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+
 
   .topnav.responsive .icon {
     position: absolute;

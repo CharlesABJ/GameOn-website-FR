@@ -9,6 +9,8 @@ const birthdateInput = document.querySelector("form #birthdate");
 const quantityInput = document.querySelector("form #quantity");
 const locationsInput = document.querySelectorAll("form input[type='radio']");
 const conditionsInput = document.querySelector("form #checkbox1");
+const closeMenu = document.querySelector(".fa-xmark");
+const openMenu = document.querySelector(".fa-bars");
 
 const errorTextFirstName = document.querySelector(".error-form.firstname");
 const errorTextLastName = document.querySelector(".error-form.lastname");
@@ -24,9 +26,13 @@ function editNav() {
   if (x.className === "topnav") {
     x.className += " responsive";
     main.className += " responsive";
+    openMenu.classList.add("hidden");
+    closeMenu.classList.remove("responsive");
   } else {
     x.className = "topnav";
     main.className -= " responsive";
+    openMenu.classList.remove("hidden");
+    closeMenu.classList.add("responsive");
   }
 }
 navIcon.addEventListener("click", editNav);
