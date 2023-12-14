@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "DM Sans", ;
+  font-family: "DM Sans";
   src: url("../fonts/DM_Sans/DMSans-Bold.ttf"),
     url("../fonts/DM_Sans/DMSans-BoldItalic.ttf"),
     url("../fonts/DM_Sans/DMSans-Italic.ttf"),
@@ -77,6 +77,18 @@ img {
   padding: 12px 12px;
 }
 
+
+/* .topnav a.header-logo {
+  display: block !important;
+}
+
+.topnav a.icon {
+  margin-top: 20px;
+}
+
+.topnav a.icon i {
+  color: #ff0000;
+} */
 
 .topnav a:hover:not(.header-logo) {
   background-color: #ff0000b8;
@@ -576,7 +588,6 @@ input[data-error]::after {
 
 .btn-signup {
   outline: none;
-  text-transform: capitalize;
   font-size: 1.3rem;
   padding: 15px 23px;
   margin: 0;
@@ -667,6 +678,7 @@ footer {
     background: #fff;
     color: #000;
     padding: 20px;
+    /* padding: 0; */
     min-width: fit-content;
   }
 
@@ -682,6 +694,9 @@ footer {
     text-align: center;
     font-size: 3.5rem;
     white-space: normal;
+
+    /* text-align: left;
+    font-size: 2.5; */
   }
 
   .hero-text {

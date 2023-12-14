@@ -124,7 +124,7 @@ function validate(e) {
   let locationCheked = Array.from(locationsInput).some(
     (location) => location.checked
   );
-
+//every
   if (!locationCheked) {
     errorTextLocations.classList.add("active");
     errorTextLocations.innerHTML = errorMessages.locations;
